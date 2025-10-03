@@ -1,0 +1,142 @@
+<!--
+Single-file HTML portfolio (Bahasa Indonesia)
+Cara pakai: simpan sebagai file `index.html` dan buka di browser.
+Tailwind dipakai via CDN untuk kemudahan (tidak perlu build step).
+Ganti teks, gambar, dan link sesuai kebutuhan.
+-->
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Daffha Maullana</title>
+    <meta name="description" content="Portofolio Daffha Maullana — Frontend Developer & Desainer UI/UX" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Penyesuaian kecil */
+      .gradient-avatar { background: linear-gradient(135deg,#6366f1,#ec4899); }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full gradient-avatar flex items-center justify-center text-white font-bold">DM</div>
+          <div>
+            <h1 class="text-lg font-semibold">Daffha Maullana</h1>
+            <p class="text-sm text-gray-500">Frontend Developer & Desainer UI/UX</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="hover:text-indigo-600">Tentang</a>
+          <a href="#projects" class="hover:text-indigo-600">Proyek</a>
+          <a href="#contact" class="hover:text-indigo-600">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <section>
+        <h2 class="text-4xl font-extrabold leading-tight mb-4">Halo, saya Daffha — membuat antarmuka yang sederhana dan bermakna.</h2>
+        <p class="text-gray-600 mb-6">Saya seorang pemain. Saya fokus pada pembuatan pengalaman dengan fineshyt yang intuitif serta desain yang estetis dan responsif.</p>
+        <div class="flex gap-3">
+          <a href="#projects" class="px-5 py-3 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700">Lihat Proyek</a>
+          <a href="#contact" class="px-5 py-3 border border-gray-200 rounded-md hover:bg-gray-100">Hubungi Saya</a>
+        </div>
+      </section>
+
+      <aside class="flex justify-center">
+        <img src="si_kasep.jpg" alt="Gambar Sementara" class="rounded-xl shadow-md object-cover" />
+      </aside>
+    </main>
+
+    <!-- About -->
+    <section id="about" class="bg-white py-12">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold mb-3">Tentang Saya</h3>
+        <p class="text-gray-600">Saya daffha si pemburu wanita, siapa yg punya kenalan fineshyt tolong kirim no nya ke saya, karena saya lagi butuh yg pulen-pulen.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-bold mb-6">Fineshyt Unggulan</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="fine1.jpg" alt="Project 1" class="w-full object-cover h-44" />
+          <div class="p-4">
+            <h4 class="font-semibold">nayla</h4>
+            <p class="text-sm text-gray-600 mt-2">Aplikasi tugas harian dengan fitur prioritas dan pengingat. Fokus pada UI yang sederhana dan cepat digunakan.</p>
+            <div class="mt-4 flex gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Tailwind</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="fine2.jpg" alt="Project 2" class="w-full object-cover h-44" />
+          <div class="p-4">
+            <h4 class="font-semibold">Salsa</h4>
+            <p class="text-sm text-gray-600 mt-2">Situs promosi kegiatan UKM kampus dengan halaman event dan pendaftaran online.</p>
+            <div class="mt-4 flex gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">HTML</span>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="fine3.jpg" alt="Project 3" class="w-full object-cover h-44" />
+          <div class="p-4">
+            <h4 class="font-semibold">ana</h4>
+            <p class="text-sm text-gray-600 mt-2">Dashboard untuk melihat metrik pengguna dan performa produk secara visual.</p>
+            <div class="mt-4 flex gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Chart</span>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">D3</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-indigo-600 text-white py-12">
+      <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">Ingin bekerja sama?</h3>
+          <p class="mt-2 text-sm text-indigo-100">Kirim pesan singkat, saya akan membalas secepatnya.</p>
+          <ul class="mt-4 text-sm">
+            <li>Email: <span class="font-medium">daffha@example.com</span></li>
+            <li>Telepon: <span class="font-medium">+62 856-9272-0649</span></li>
+          </ul>
+        </div>
+        <form class="bg-white p-4 rounded-lg text-gray-900" onsubmit="event.preventDefault(); alert('Form dummy — ganti dengan backend atau layanan form');">
+          <label class="block text-sm font-medium">Nama</label>
+          <input class="w-full mt-1 p-2 border rounded" placeholder="Nama Anda" />
+
+          <label class="block text-sm font-medium mt-3">Email</label>
+          <input class="w-full mt-1 p-2 border rounded" placeholder="email@contoh.com" />
+
+          <label class="block text-sm font-medium mt-3">Pesan</label>
+          <textarea class="w-full mt-1 p-2 border rounded" rows="4" placeholder="Tulis pesan..." ></textarea>
+
+          <button type="submit" class="mt-4 w-full bg-indigo-600 text-white py-2 rounded">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-center py-6 text-sm text-gray-500">
+      © <span id="year"></span> Daffha Maullana — Semua hak cipta.
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
